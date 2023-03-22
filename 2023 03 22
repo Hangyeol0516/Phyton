@@ -3,7 +3,6 @@ num=int(input("enter the repeat number :"))
 for i in range(num):
     print("you are so good student")
     //
-    
     cnt = 1
 chr = input("enter the string :")
 for i in chr:
