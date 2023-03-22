@@ -1,1 +1,22 @@
+num=int(input("enter the repeat number :"))
 
+for i in range(num):
+    print("you are so good student")
+    //
+    
+    cnt = 1
+chr = input("enter the string :")
+for i in chr:
+  print(cnt, '번째 알파벳:', chr[cnt-1]) #print(cnt, '번째 알파벳', i)
+  cnt=cnt+1
+ //
+  while(True) :
+  num=int(input("input the umber :"))
+  if num == -1
+   print("stop")
+   break
+  if num%2==0:
+    print(num, "is even")
+  else :
+    print(num, "is odd") 
+//
