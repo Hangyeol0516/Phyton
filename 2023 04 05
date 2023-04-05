@@ -1,0 +1,21 @@
+#가위 1
+#바위 2
+#보 3
+
+a = int(input("입력"))
+b = int(input("입력"))
+
+if a==1 and b==2 :
+  print("B승")
+elif a==2 and b==1 :
+  print("A승")
+elif a==2 and b==3 :
+  print("B승")
+elif a==3 and b==2 :
+  print("A승")
+elif a==3 and b==1 :
+  print("B승")
+elif a==1 and b==3 :
+  print("A승") 
+elif b==a :
+  print("무승부")
