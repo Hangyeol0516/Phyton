@@ -1,0 +1,5 @@
+a = (input("기침 입력 Y or N : "))
+b = float(input("체온 입력 : "))
+
+if a=="Y" and b>=38.5 :
+ print("독감일 수 있습니다")
