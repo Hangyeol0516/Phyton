@@ -1,0 +1,12 @@
+a = int(input("input first number :"))
+b = (input(""))
+c = int(input("input second number :"))
+
+if b=="+":
+  print(a,"+",c,"=",a+c)
+elif b=="-":
+  print(a,"-",c,"=",a-c)
+elif b=="*":
+  print(a,"*",c,"=",a*c)
+else :
+  print(a,"/",c,"=",a/c)
