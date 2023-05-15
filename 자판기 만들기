@@ -1,1 +1,103 @@
+print("안녕하세요 준화이70 입니다.")
 
+soda = {'콜라' : 1700,'사이다' : 1600,'에비앙' : 2210}
+
+print("메뉴 목록")
+print("------------")
+
+for i in soda:
+    print(i, soda[i])
+print("------------")
+
+while True :
+
+    menu = input("구매할 메뉴 입력해주세요.")
+    num = int(input("구매할 수량을 입력해주세요."))
+
+    if (menu == '콜라') :
+        money = int(input("돈을 입력해주세요."))
+        print("----------")
+        money -= 1700
+        if money // 1000 != 0 :
+            num1 = money // 1000
+            print("천원지폐",num1,"장")
+            money = money-(num1*1000)
+        if money // 500 !=0 :
+            num2 = money // 500
+            print("500원 동전",num2,"개")
+            money = money-(num2*500)
+        if money // 100 !=0 :
+            num3 = money //  100
+            print("100원 동전",num3,"개")
+            money = money-(num3*100)
+        if money // 50 !=0 :
+            num4 = money // 50
+            print("50원 동전",num4,"개")
+            money = money-(num4*50)
+        if money // 10 :
+            num5 = money // 10
+            print("10원 동전",num5,"개")
+            money = money-(num5*10)
+
+    elif (menu == '사이다') :
+        money = int(input("돈을 입력해주세요."))
+        print("----------")
+        money -= 1600
+        if money // 1000 != 0 :
+            num1 = money // 1000
+            print("천원지폐",num1,"장")
+            money = money-(num1*1000)
+        if money // 500 !=0 :
+            num2 = money // 500
+            print("500원 동전",num2,"개")
+            money = money-(num2*500)
+        if money // 100 !=0 :
+            num3 = money //  100
+            print("100원 동전",num3,"개")
+            money = money-(num3*100)
+        if money // 50 !=0 :
+            num4 = money // 50
+            print("50원 동전",num4,"개")
+            money = money-(num4*50)
+        if money // 10 :
+            num5 = money // 10
+            print("10원 동전",num5,"개")
+            money = money-(num5*10)
+
+    elif (menu == '에비앙') :
+        money = int(input("돈을 입력해주세요."))
+        print("----------")
+        money -= 2210
+        if money // 1000 != 0 :
+            num1 = money // 1000
+            print("천원지폐",num1,"장")
+            money = money-(num1*1000)
+        if money // 500 !=0 :
+            num2 = money // 500
+            print("500원 동전",num2,"개")
+            money = money-(num2*500)
+        if money // 100 !=0 :
+            num3 = money //  100
+            print("100원 동전",num3,"개")
+            money = money-(num3*100)
+        if money // 50 !=0 :
+            num4 = money // 50
+            print("50원 동전",num4,"개")
+            money = money-(num4*50)
+        if money // 10 :
+            num5 = money // 10
+            print("10원 동전",num5,"개")
+            money = money-(num5*10)        
+    print("----------")
+    print("다른 메뉴를 구매하시겠습니까?")
+    back = int(input("----------\n그렇다면 1번 아니라면 2번을 눌러주세요"))
+
+    if back == 1 :
+        continue
+
+    elif back == 2 :
+        break
+
+print("----------")
+print("준화이70을 이용해주셔서 감사합니다.")
+print("----------")
