@@ -1,5 +1,6 @@
+print("------------")
 print("안녕하세요 준화이70 입니다.")
-
+print("------------")
 soda = {'콜라' : 1700,'사이다' : 1600,'에비앙' : 2210}
 
 print("메뉴 목록")
@@ -17,6 +18,7 @@ while True :
     if (menu == '콜라') :
         money = int(input("돈을 입력해주세요."))
         print("----------")
+        print("거스름돈을 출력합니다.")
         money -= 1700
         if money // 1000 != 0 :
             num1 = money // 1000
@@ -90,7 +92,7 @@ while True :
             money = money-(num5*10)        
     print("----------")
     print("다른 메뉴를 구매하시겠습니까?")
-    back = int(input("----------\n그렇다면 1번 아니라면 2번을 눌러주세요"))
+    back = int(input("----------\n그렇다면 1번 아니라면 2번을 눌러주세요\n----------"))
 
     if back == 1 :
         continue
@@ -98,6 +100,5 @@ while True :
     elif back == 2 :
         break
 
-print("----------")
 print("준화이70을 이용해주셔서 감사합니다.")
 print("----------")
