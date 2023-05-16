@@ -2,20 +2,42 @@ print("안녕하세요 준화이70 입니다.")
 
 print("\n")
 
-soda = {'콜라' : 1700,'사이다' : 1600,'에비앙' : 2210}
+soda = {'참이슬' : 1700,'카스' : 1600,'테라' : 2210}
 
 print("메뉴 목록")
 print("------------")
 for i in soda:
-    print(i, soda[i])
+    print(i, soda[i],"원")
 print("------------")
 
 while True :
 
     menu = input("구매할 메뉴 입력해주세요.")
 
+    print("---------")
+
+    a = input("주민등록번호 앞 8자리를 입력해주세요.: ")
+
+    print("---------")
+
+    result = a[0:4]
+
+    print(result,"년생")
+
+    result = int(result)
+
+    if result <= 2004 :
+        print("성인입니다.")
+    else :
+        print("미성년자는 주류를 구매할 수 없습니다.")
+        print("---------")
+        break
+
     if (menu in soda) :
         num = int(input("구매할 수량을 입력해주세요."))
+        if num <= 0 :
+            print("올바른 수량을 입력해주세요.")
+            continue
         money = int(input("돈을 입력해주세요."))
         if money < soda[menu] * num :
             print("금액이 부족합니다.")
@@ -29,6 +51,14 @@ while True :
         print("----------")
         print("거스름 돈을 출력합니다.")
         money -= soda[menu] * num
+        if money // 10000 != 0 :
+            num0 = money // 10000
+            print("만원지폐",num0,"장")
+            money = money-(num0*10000)
+        if money // 5000 != 0 :
+            num6 = money // 5000
+            print("오천원지폐",num6,"장")
+            money = money-(num6*5000)    
         if money // 1000 != 0 :
             num1 = money // 1000
             print("천원지폐",num1,"장")
@@ -66,7 +96,7 @@ while True :
 
         if choise == 1 :
             continue
-        else :
+        elif choise == 2 :
             break
 
 print("준화이70을 이용해주셔서 감사합니다.")
