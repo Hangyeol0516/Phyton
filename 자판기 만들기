@@ -43,6 +43,10 @@ if menuchoise == 1 :
 
         if (menu in sake) :
             num = int(input("구매할 수량을 입력해주세요."))
+            if money < sake[menu] * num :
+                print("잔액이 부족합니다.")
+                print("-----------")
+                break
             if num <= 0 :
                 print("올바른 수량을 입력해주세요.")
                 continue
@@ -119,6 +123,10 @@ elif menuchoise == 2:
 
         if (menu in soda) :
             num = int(input("구매할 수량을 입력해주세요."))
+            if money < soda[menu] * num :
+                print("잔액이 부족합니다.")
+                print("-----------")
+                break
             if num <= 0 :
                 print("올바른 수량을 입력해주세요.")
                 continue
@@ -179,4 +187,3 @@ elif menuchoise == 2:
                 break
 
     print("준화이70을 이용해주셔서 감사합니다.")
-    print("이 프로그램은 3팀 조장의 지분이 50% 라는거를 밝힙니다.")
