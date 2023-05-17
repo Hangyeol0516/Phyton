@@ -47,47 +47,47 @@ if menuchoise == 1 :
                 print("올바른 수량을 입력해주세요.")
                 continue
                 
-        print("----------")
+            print("----------")
 
-        result += sake[menu] * num
-        print("현재 남은 잔액은",money - result,"원 입니다.")
-        print("-----------")
-        choise = int(input("또 다른 메뉴를 구매하시려면 1번 아니면 2번을 눌러주세요."))
-        print("-----------")
+            result += sake[menu] * num
+            print("현재 남은 잔액은",money - result,"원 입니다.")
+            print("-----------")
+            choise = int(input("또 다른 메뉴를 구매하시려면 1번 아니면 2번을 눌러주세요."))
+            print("-----------")
         
-        if choise == 1 :
-            continue
+            if choise == 1 :
+                continue
 
-        elif choise == 2 :
-            money -= result
-            if money // 10000 != 0 :
-                num0 = money // 10000
-                print("만원지폐",num0,"장")
-                money = money-(num0*10000)
-            if money // 5000 != 0 :
-                num6 = money // 5000
-                print("오천원지폐",num6,"장")
-                money = money-(num6*5000)    
-            if money // 1000 != 0 :
-                num1 = money // 1000
-                print("천원지폐",num1,"장")
-                money = money-(num1*1000)
-            if money // 500 !=0 :
-                num2 = money // 500
-                print("500원 동전",num2,"개")
-                money = money-(num2*500)
-            if money // 100 !=0 :
-                num3 = money //  100
-                print("100원 동전",num3,"개")
-                money = money-(num3*100)
-            if money // 50 !=0 :
-                num4 = money // 50
-                print("50원 동전",num4,"개")
-                money = money-(num4*50)
-            if money // 10 :
-                num5 = money // 10
-                print("10원 동전",num5,"개")
-                money = money-(num5*10) 
+            elif choise == 2 :
+                money -= result
+                if money // 10000 != 0 :
+                    num0 = money // 10000
+                    print("만원지폐",num0,"장")
+                    money = money-(num0*10000)
+                if money // 5000 != 0 :
+                    num6 = money // 5000
+                    print("오천원지폐",num6,"장")
+                    money = money-(num6*5000)    
+                if money // 1000 != 0 :
+                    num1 = money // 1000
+                    print("천원지폐",num1,"장")
+                    money = money-(num1*1000)
+                if money // 500 !=0 :
+                    num2 = money // 500
+                    print("500원 동전",num2,"개")
+                    money = money-(num2*500)
+                if money // 100 !=0 :
+                    num3 = money //  100
+                    print("100원 동전",num3,"개")
+                    money = money-(num3*100)
+                if money // 50 !=0 :
+                    num4 = money // 50
+                    print("50원 동전",num4,"개")
+                    money = money-(num4*50)
+                if money // 10 :
+                    num5 = money // 10
+                    print("10원 동전",num5,"개")
+                    money = money-(num5*10) 
 
         else :
             print("-----------")
@@ -121,47 +121,47 @@ elif menuchoise == 2:
                 print("올바른 수량을 입력해주세요.")
                 continue
                 
-        print("----------")
+            print("----------")
 
-        result += soda[menu] * num
-        print("현재 남은 잔액은",money - result,"원 입니다.")
-        print("-----------")
-        choise = int(input("또 다른 메뉴를 구매하시려면 1번 아니면 2번을 눌러주세요."))
-        print("-----------")
+            result += soda[menu] * num
+            print("현재 남은 잔액은",money - result,"원 입니다.")
+            print("-----------")
+            choise = int(input("또 다른 메뉴를 구매하시려면 1번 아니면 2번을 눌러주세요."))
+            print("-----------")
         
-        if choise == 1 :
-            continue
+            if choise == 1 :
+                continue
 
-        elif choise == 2 :
-            money -= result
-            if money // 10000 != 0 :
-                num0 = money // 10000
-                print("만원지폐",num0,"장")
-                money = money-(num0*10000)
-            if money // 5000 != 0 :
-                num6 = money // 5000
-                print("오천원지폐",num6,"장")
-                money = money-(num6*5000)    
-            if money // 1000 != 0 :
-                num1 = money // 1000
-                print("천원지폐",num1,"장")
-                money = money-(num1*1000)
-            if money // 500 !=0 :
-                num2 = money // 500
-                print("500원 동전",num2,"개")
-                money = money-(num2*500)
-            if money // 100 !=0 :
-                num3 = money //  100
-                print("100원 동전",num3,"개")
-                money = money-(num3*100)
-            if money // 50 !=0 :
-                num4 = money // 50
-                print("50원 동전",num4,"개")
-                money = money-(num4*50)
-            if money // 10 :
-                num5 = money // 10
-                print("10원 동전",num5,"개")
-                money = money-(num5*10) 
+            elif choise == 2 :
+                money -= result
+                if money // 10000 != 0 :
+                    num0 = money // 10000
+                    print("만원지폐",num0,"장")
+                    money = money-(num0*10000)
+                if money // 5000 != 0 :
+                    num6 = money // 5000
+                    print("오천원지폐",num6,"장")
+                    money = money-(num6*5000)    
+                if money // 1000 != 0 :
+                    num1 = money // 1000
+                    print("천원지폐",num1,"장")
+                    money = money-(num1*1000)
+                if money // 500 !=0 :
+                    num2 = money // 500
+                    print("500원 동전",num2,"개")
+                    money = money-(num2*500)
+                if money // 100 !=0 :
+                    num3 = money //  100
+                    print("100원 동전",num3,"개")
+                    money = money-(num3*100)
+                if money // 50 !=0 :
+                    num4 = money // 50
+                    print("50원 동전",num4,"개")
+                    money = money-(num4*50)
+                if money // 10 :
+                    num5 = money // 10
+                    print("10원 동전",num5,"개")
+                    money = money-(num5*10) 
 
         else :
             print("-----------")
