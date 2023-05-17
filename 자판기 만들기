@@ -88,6 +88,8 @@ if menuchoise == 1 :
                     num5 = money // 10
                     print("10원 동전",num5,"개")
                     money = money-(num5*10) 
+                print("----------")
+                break
 
         else :
             print("-----------")
@@ -162,7 +164,9 @@ elif menuchoise == 2:
                     num5 = money // 10
                     print("10원 동전",num5,"개")
                     money = money-(num5*10) 
-
+                print("----------")
+                break
+                    
         else :
             print("-----------")
             print("선택하신 메뉴는 존재하지 않는 메뉴입니다.")
@@ -175,3 +179,4 @@ elif menuchoise == 2:
                 break
 
     print("준화이70을 이용해주셔서 감사합니다.")
+    print("이 프로그램은 3팀 조장의 지분이 50% 라는거를 밝힙니다.")
