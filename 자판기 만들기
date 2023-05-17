@@ -1,3 +1,5 @@
+result = 0
+
 print("안녕하세요 준화이70 입니다.")
 
 print("\n")
@@ -5,7 +7,7 @@ print("\n")
 sake = {'참이슬' : 1700,'카스' : 1600,'테라' : 2210}
 soda = {'콜라' : 1300,'사이다' : 1400,'밀키스' : 2010}
 
-menuchoise = int(input("주류 자판기를 이용하시려면 1번을 일반 음료를 구매하시려면 2번을 눌러주세요."))
+menuchoise = int(input("----------\n주류 자판기를 이용하시려면 1번을 일반 음료를 구매하시려면 2번을 눌러주세요."))
 
 if menuchoise == 1 : 
     print("---------")
@@ -33,6 +35,8 @@ if menuchoise == 1 :
         print(i, sake[i],"원")
     print("------------")
 
+    money = int(input("돈을 투입해주세요."))
+
     while True :
 
         menu = input("구매할 메뉴 입력해주세요.")
@@ -42,20 +46,20 @@ if menuchoise == 1 :
             if num <= 0 :
                 print("올바른 수량을 입력해주세요.")
                 continue
-            print("가격은",sake[menu] * num,"원 입니다.")
-            money = int(input("돈을 입력해주세요."))
-            if money < sake[menu] * num :
-                print("금액이 부족합니다.")
-                choise = int(input("다시 한 번 메뉴를 선택하려면 1번 아니면 2번을 눌러주세요."))
-                print("-----------")
-                if choise == 1 :
-                    continue
-                else :
-                    break
                 
-            print("----------")
-            print("거스름 돈을 출력합니다.")
-            money -= sake[menu] * num
+        print("----------")
+
+        result += sake[menu] * num
+        print("현재 남은 잔액은",money - result,"원 입니다.")
+        print("-----------")
+        choise = int(input("또 다른 메뉴를 구매하시려면 1번 아니면 2번을 눌러주세요."))
+        print("-----------")
+        
+        if choise == 1 :
+            continue
+
+        elif choise == 2 :
+            money -= result
             if money // 10000 != 0 :
                 num0 = money // 10000
                 print("만원지폐",num0,"장")
@@ -84,14 +88,6 @@ if menuchoise == 1 :
                 num5 = money // 10
                 print("10원 동전",num5,"개")
                 money = money-(num5*10) 
-            print("-----------")
-            choise = int(input("또 다른 메뉴를 구매하시려면 1번 아니면 2번을 눌러주세요."))
-            print("-----------")
-
-            if choise == 1 :
-                continue
-            else :
-                break
 
         else :
             print("-----------")
@@ -113,6 +109,8 @@ elif menuchoise == 2:
         print(i, soda[i],"원")
     print("------------")
 
+    money = int(input("돈을 투입해주세요."))
+
     while True :
 
         menu = input("구매할 메뉴 입력해주세요.")
@@ -122,20 +120,20 @@ elif menuchoise == 2:
             if num <= 0 :
                 print("올바른 수량을 입력해주세요.")
                 continue
-            print("가격은",soda[menu] * num,"원 입니다.")
-            money = int(input("돈을 입력해주세요."))
-            if money < soda[menu] * num :
-                print("금액이 부족합니다.")
-                choise = int(input("다시 한 번 메뉴를 선택하려면 1번 아니면 2번을 눌러주세요."))
-                print("-----------")
-                if choise == 1 :
-                    continue
-                else :
-                    break
                 
-            print("----------")
-            print("거스름 돈을 출력합니다.")
-            money -= soda[menu] * num
+        print("----------")
+
+        result += soda[menu] * num
+        print("현재 남은 잔액은",money - result,"원 입니다.")
+        print("-----------")
+        choise = int(input("또 다른 메뉴를 구매하시려면 1번 아니면 2번을 눌러주세요."))
+        print("-----------")
+        
+        if choise == 1 :
+            continue
+
+        elif choise == 2 :
+            money -= result
             if money // 10000 != 0 :
                 num0 = money // 10000
                 print("만원지폐",num0,"장")
@@ -164,14 +162,6 @@ elif menuchoise == 2:
                 num5 = money // 10
                 print("10원 동전",num5,"개")
                 money = money-(num5*10) 
-            print("-----------")
-            choise = int(input("또 다른 메뉴를 구매하시려면 1번 아니면 2번을 눌러주세요."))
-            print("-----------")
-
-            if choise == 1 :
-                continue
-            else :
-                break
 
         else :
             print("-----------")
