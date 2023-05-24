@@ -327,7 +327,9 @@ elif menuchoise == 2:
                 print("----------")
                 break
 
-else : 
-  print("올바른 숫자를 입력해주세요.")
+else :
+    print("----------")
+    print("올바른 숫자를 입력해주세요.")
+    print("----------")
 
 print("준화이70을 이용해주셔서 감사합니다.")
