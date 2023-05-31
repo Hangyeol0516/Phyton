@@ -1,0 +1,17 @@
+import random
+rn = random.randrange(1, 101 ,1)
+num = -1
+i = 0
+while True :
+  n = int(input())
+  i = i + 1
+  if n > rn :
+    print("다운")
+    continue
+  if n < rn :
+    print("업")
+    continue
+  if n == rn :
+    print("정답")
+    break
+print(i,"번 만에 맞추셨습니다.")
