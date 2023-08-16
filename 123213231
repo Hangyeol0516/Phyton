@@ -1,0 +1,10 @@
+스택 (Steak)
+LIFO - Lasy in First Out
+최근에 스택에 추가된 항목이 가장 먼저 제거된다.
+ * 가장 최근에 저장된 값 다음에 저장 (Push)
+ * 가장 최근에 저장된 값이 먼저 나감 (Pop)
+
+큐 (queue)
+FIFO - First in First Out
+ * 가장 최근에 저장된 값 다음에 저장 (Enqueue)
+ * 가장 오래전에 저장된 값부터 나감 (Dequeue)
